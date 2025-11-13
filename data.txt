@@ -1,0 +1,12 @@
+Robot wheel inertia
+
+Motor: 
+	m = 0.135 g, R = 0.021 m
+	I = 1/2 m R² = 3.0 10⁻⁵
+
+Wheel:
+	m = 0.07 g, R = 0.06 m
+	I = m R² = 0.000252 kg.m²
+	
+Total:
+	I = 0.000282 kg.m²
