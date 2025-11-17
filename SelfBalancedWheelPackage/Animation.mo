@@ -3,9 +3,9 @@ within SelfBalancedWheelPackage;
 model Animation
   inner Modelica.Mechanics.MultiBody.World world(animateWorld = false, animateGravity = false, axisLength = 0.02, axisDiameter = 0.02) annotation(
     Placement(transformation(origin = {-20, -76}, extent = {{-10, -10}, {10, 10}})));
-  Modelica.Mechanics.MultiBody.Joints.Revolute arm_revolute(n = {0, 0, 1}, cylinderDiameter = 0.005, cylinderLength = 0.005, useAxisFlange = false, animation = false) annotation(
+  Modelica.Mechanics.MultiBody.Joints.Revolute arm_revolute(n = {0, 0, 1}, cylinderDiameter = 0.005, cylinderLength = 0.005, useAxisFlange = false, animation = false, phi(start = 0.08726646259971647, fixed = true)) annotation(
     Placement(transformation(origin = {0, -44}, extent = {{-10, -10}, {10, 10}}, rotation = 90)));
-  Modelica.Mechanics.MultiBody.Parts.BodyShape arm_bodyShape(r = {0.001, 0.173, 0}, m = 0.07, animateSphere = false, length = 0.198, width = 0.02, r_CM = {0, 0.173/3*2, 0}, shapeType = "modelica://SelfBalancedWheelPackage/Resources/Shapes/long_arm_support.stl") annotation(
+  Modelica.Mechanics.MultiBody.Parts.BodyShape arm_bodyShape(r = {0, 0.173, 0}, m = 0.07, animateSphere = false, length = 0.198, width = 0.02, r_CM = {0, 0.173/3*2, 0}, shapeType = "modelica://SelfBalancedWheelPackage/Resources/Shapes/long_arm_support.stl", r_0(start = {0.01, 0.173, 0})) annotation(
     Placement(transformation(origin = {0, -8}, extent = {{-10, -10}, {10, 10}}, rotation = 90)));
   Modelica.Mechanics.MultiBody.Parts.BodyShape wheel_bodyShape(r = {0, 0.173, 0}, m = 0.07, animateSphere = false,final length = 0.580,final width = 0.002, sphereColor = {255, 0, 0}, shapeType = "modelica://SelfBalancedWheelPackage/Resources/Shapes/inertia_wheel.stl", I_22 = 0.001, I_11 = 0.001, I_33 = 0.0235, I_21 = 0, r_CM = {0, 0.173, 0}) annotation(
     Placement(transformation(origin = {0, 74}, extent = {{-10, -10}, {10, 10}}, rotation = 90)));

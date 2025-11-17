@@ -3,7 +3,7 @@ within SelfBalancedWheelPackage;
 model Dynamics
   Modelica.Mechanics.Rotational.Interfaces.Flange_b outputSpeed annotation(
     Placement(transformation(origin = {104, -54}, extent = {{-10, -10}, {10, 10}}), iconTransformation(origin = {96, 20}, extent = {{-10, -10}, {10, 10}})));
-  Modelica.Electrical.Machines.BasicMachines.DCMachines.DC_PermanentMagnet dcpm(TaOperational = 293.15, Jr = 0.00014, VaNominal = 12, wNominal (displayUnit = "rpm")= 314.1592653589793, IaNominal = 0.8) annotation(
+  Modelica.Electrical.Machines.BasicMachines.DCMachines.DC_PermanentMagnet dcpm(TaOperational = 293.15, Jr = 0.00014, VaNominal = 12, wNominal (displayUnit = "rpm")= 314.1592653589793, IaNominal = 0.08) annotation(
     Placement(transformation(origin = {50, -12}, extent = {{-10, -10}, {10, 10}})));
   Modelica.Mechanics.Rotational.Sensors.SpeedSensor speedSensor1 annotation(
     Placement(transformation(origin = {44, -54}, extent = {{10, -10}, {-10, 10}})));
@@ -19,7 +19,7 @@ model Dynamics
     Placement(transformation(origin = {30, 38}, extent = {{-10, -10}, {10, 10}})));
   Modelica.Blocks.Sources.Constant refAngle(k = 0)  annotation(
     Placement(transformation(origin = {-82, 88}, extent = {{-10, -10}, {10, 10}})));
-  Modelica.Blocks.Continuous.LimPID PID( yMax = 12, withFeedForward = true, kFF = 0.3, Ti = 0.02, k = 5, controllerType = Modelica.Blocks.Types.SimpleController.PD)  annotation(
+  Modelica.Blocks.Continuous.LimPID PID( yMax = 12, withFeedForward = true, kFF = 0.01, k = 3, controllerType = Modelica.Blocks.Types.SimpleController.PID, Td = 0.03)  annotation(
     Placement(transformation(origin = {-34, 88}, extent = {{-10, -10}, {10, 10}})));
 equation
   connect(speedSensor1.flange, dcpm.flange) annotation(
