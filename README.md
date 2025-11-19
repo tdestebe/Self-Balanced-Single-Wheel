@@ -11,9 +11,9 @@ As a limitation of the current implementation, this loop is not performed quickl
 
 ## free-fall simulation
 
-![Watch the video](https://github.com/tdestebe/Self-Balanced-Single-Wheel/blob/c7efdbdb9b2b29d7fffca7758ad53dfc34a5959a/videos/thumbnail.png)](https://github.com/tdestebe/Self-Balanced-Single-Wheel/blob/c7efdbdb9b2b29d7fffca7758ad53dfc34a5959a/videos/singleWheelSelfFreeFall.mp4)
+[![Watch the video](https://github.com/tdestebe/Self-Balanced-Single-Wheel/blob/c7efdbdb9b2b29d7fffca7758ad53dfc34a5959a/videos/thumbnail.png)](https://github.com/tdestebe/Self-Balanced-Single-Wheel/blob/c7efdbdb9b2b29d7fffca7758ad53dfc34a5959a/videos/singleWheelSelfFreeFall.mp4)
 
 ## self balanced simulation
 
-![Watch the video](https://github.com/tdestebe/Self-Balanced-Single-Wheel/blob/c7efdbdb9b2b29d7fffca7758ad53dfc34a5959a/videos/thumbnail.png)](https://github.com/tdestebe/Self-Balanced-Single-Wheel/blob/c7efdbdb9b2b29d7fffca7758ad53dfc34a5959a/videos/singleWheelSelfBalancedSimulation.mp4)
+[![Watch the video](https://github.com/tdestebe/Self-Balanced-Single-Wheel/blob/c7efdbdb9b2b29d7fffca7758ad53dfc34a5959a/videos/thumbnail.png)](https://github.com/tdestebe/Self-Balanced-Single-Wheel/blob/c7efdbdb9b2b29d7fffca7758ad53dfc34a5959a/videos/singleWheelSelfBalancedSimulation.mp4)
 
