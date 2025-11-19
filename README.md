@@ -9,4 +9,11 @@ In our case, the MPU6050 sensor is replaced by an AbsoluteAngles (Measure absolu
 As a limitation of the current implementation, this loop is not performed quickly enough so that the device would be stable in a vertical position.However, the device doesn't fall and stays around the vertical position.
 
 
+## free-fall simulation
+
+![Watch the video](https://github.com/tdestebe/Self-Balanced-Single-Wheel/blob/c7efdbdb9b2b29d7fffca7758ad53dfc34a5959a/videos/thumbnail.png)](https://github.com/tdestebe/Self-Balanced-Single-Wheel/blob/c7efdbdb9b2b29d7fffca7758ad53dfc34a5959a/videos/singleWheelSelfFreeFall.mp4)
+
+## self balanced simulation
+
+![Watch the video](https://github.com/tdestebe/Self-Balanced-Single-Wheel/blob/c7efdbdb9b2b29d7fffca7758ad53dfc34a5959a/videos/thumbnail.png)](https://github.com/tdestebe/Self-Balanced-Single-Wheel/blob/c7efdbdb9b2b29d7fffca7758ad53dfc34a5959a/videos/singleWheelSelfBalancedSimulation.mp4)
 
