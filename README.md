@@ -8,12 +8,15 @@ In the physical model, a PID controller continuously calculates an error value a
 In our case, the MPU6050 sensor is replaced by an AbsoluteAngles (Measure absolute angles between frame connector and the world frame) that collects data of the position (more precisely the angle) of the device, and sends that data to the dynamical implementation which performs calculations, like in the Arduino, and sends the result to the electric motor (Modelica DC_PermanentMagnet component), which with its movement tends to hold the device in the desired position. 
 As a limitation of the current implementation, this loop is not performed quickly enough so that the device would be stable in a vertical position.However, the device doesn't fall and stays around the vertical position.
 
+## Simulation results
+CAD Model:
+<img width="1936" height="1152" alt="thumbnail" src="https://github.com/user-attachments/assets/8101cd32-f389-488b-9fec-0e81bf05d595" />
 
-## free-fall simulation
+### free-fall simulation
 
 [![Watch the video](https://github.com/tdestebe/Self-Balanced-Single-Wheel/blob/c7efdbdb9b2b29d7fffca7758ad53dfc34a5959a/videos/thumbnail.png)](https://github.com/tdestebe/Self-Balanced-Single-Wheel/blob/c7efdbdb9b2b29d7fffca7758ad53dfc34a5959a/videos/singleWheelSelfFreeFall.mp4)
 
-## self balanced simulation
+### self balanced simulation
 
 [![Watch the video](https://github.com/tdestebe/Self-Balanced-Single-Wheel/blob/c7efdbdb9b2b29d7fffca7758ad53dfc34a5959a/videos/thumbnail.png)](https://github.com/tdestebe/Self-Balanced-Single-Wheel/blob/c7efdbdb9b2b29d7fffca7758ad53dfc34a5959a/videos/singleWheelSelfBalancedSimulation.mp4)
 
